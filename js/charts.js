@@ -104,7 +104,6 @@ var barLayout = {
 // 10. Use Plotly to plot the data with the layout. 
 Plotly.newPlot('bar', barData, barLayout)
 });
-}
 
 ////Create bubble chart/////
 
@@ -133,7 +132,11 @@ var bubbleLayout = {
 // 3. Use Plotly to plot the data with the layout.
 Plotly.newPlot('bubble', bubbleData, bubbleLayout);
 
+}
+
 //// GAUGE CHART ///
+
+function gaugeChart () {
 
 // Create the trace for the gauge chart.
 var metadata= data.metadata;
@@ -176,7 +179,7 @@ var gaugeData = [{
 var gaugeLayout = {
   margin: {
   t:2,
-  b: 2 
+  b:2, 
 },
 width:600,
 height:400,
@@ -185,5 +188,5 @@ font: { color: "black", family: "Arial" }
 
 // 6. Use Plotly to plot the gauge data and layout.
 Plotly.newPlot('gauge', gaugeData, gaugeLayout)
-});
+
 }
